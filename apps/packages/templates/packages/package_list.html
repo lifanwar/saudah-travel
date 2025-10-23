@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Paket Travel - Saudah Travel{% endblock %}
+
+{% block content %}
+<section>
+    <h1>Paket Travel Kami</h1>
+    
+    <div>
+        {% for package in packages %}
+        <div>
+            <h2>{{ package.name }}</h2>
+            <p>{{ package.description }}</p>
+            <p>Harga: Rp {{ package.price }}</p>
+            <a href="/paket-saudah/{{ package.id }}/">Detail</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

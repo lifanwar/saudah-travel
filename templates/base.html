@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Saudah Travel{% endblock %}</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    
+    <!-- Custom Tailwind Config (optional) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#64748b',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+    
+    <main>
+        {% block content %}
+        <!-- Konten dari child templates akan muncul di sini -->
+        {% endblock %}
+    </main>
+    
+    {% include 'partials/footer.html' %}
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

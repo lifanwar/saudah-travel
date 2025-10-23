@@ -1,0 +1,92 @@
+<footer id="footer" class="relative bg-gray-50">
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+            
+            <!-- Company Info - 4 columns -->
+            <div class="lg:col-span-4">
+                <a href="{% url 'core:beranda' %}" class="flex items-center mb-4">
+                    <span class="text-2xl font-bold text-gray-800">Saudah Berkah Abadi</span>
+                </a>
+                
+                <div class="text-gray-600 space-y-1 pt-3">
+                    <p>Depan Masjid Al-Barokah Kemloko Bergas Kidul</p>
+                    <p>Jl. Lemah Abang Bandungan, Kemloko, Kel. Bergas Kidul, Kec. Bergas</p>
+                    <p>Kabupaten Semarang</p>
+                    
+                    <p class="mt-3"><strong class="text-gray-800">Phone:</strong> <span>0813-9225-2414 (Owner)</span></p>
+                    <p class="mt-1"><strong class="text-gray-800">Phone:</strong> <span>0896-3014-6119 (Owner)</span></p>
+                    <p class="mt-1"><strong class="text-gray-800">Phone:</strong> <span>0895-4150-83471 (Manager)</span></p>
+                    <p class="mt-1"><strong class="text-gray-800">Phone:</strong> <span>0889-5378-390 (Bendahara)</span></p>
+                    <p class="mt-1"><strong class="text-gray-800">Phone:</strong> <span>0882-2654-0087 (CS)</span></p>
+                    <p class="mt-1"><strong class="text-gray-800">Phone:</strong> <span>0888-0629-2172 (Perlengkapan)</span></p>
+                    <p class="mt-3"><strong class="text-gray-800">Email:</strong> <span>saudahberkahabadi@gmail.com</span></p>
+                </div>
+                
+                <!-- Social Links / Certifications -->
+                <div class="flex items-center gap-2 mt-4">
+                    {% comment %} <img src="{% static 'images/5pastiumroh.png' %}" alt="5 Pasti Umroh" class="h-10">
+                    <img src="{% static 'images/siskopatuh.png' %}" alt="Siskopatuh" class="h-10">
+                    <img src="{% static 'images/himpuh.png' %}" alt="Himpuh" class="h-10">
+                    <img src="{% static 'images/kan.jpg' %}" alt="KAN" class="h-10">
+                    <img src="{% static 'images/iata.png' %}" alt="IATA" class="h-10"> {% endcomment %}
+                </div>
+            </div>
+            
+            <!-- Favorite Packages - 3 columns -->
+            <div class="lg:col-span-3">
+                <h4 class="text-lg font-semibold text-gray-800 mb-4">Paket Favorit</h4>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Haji
+                        </a>
+                        {% comment %} <a href="{% url 'packages:haji' %}" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Haji
+                        </a> {% endcomment %}
+                    </li>
+                    <li>
+                        <a href="" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Umroh
+                        </a>
+                        {% comment %} <a href="{% url 'packages:umroh' %}" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Umroh
+                        </a> {% endcomment %}
+                    </li>
+                    <li>
+                        <a href="" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Tour
+                        </a>
+                        {% comment %} <a href="{% url 'packages:tour' %}" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Tour
+                        </a> {% endcomment %}
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Google Maps - 5 columns -->
+            <div class="lg:col-span-5">
+                <iframe 
+                    class="rounded-lg w-full" 
+                    style="min-height: 350px" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.390742029084!2d110.40014937415836!3d-7.196179992809177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70870077f1926f%3A0x95df7601a6535466!2sSaudah%20Berkah%20Abadi!5e0!3m2!1sid!2sid!4v1746659409846!5m2!1sid!2sid" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="border-t border-gray-200 mt-8 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600">
+                © <span>Copyright</span> 
+                <strong class="px-1 text-gray-800">PT Saudah Berkah Abadi</strong> 
+                <span>All Rights Reserved</span>
+            </p>
+        </div>
+    </div>
+</footer>

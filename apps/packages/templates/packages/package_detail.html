@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ package.name }} - Saudah Travel{% endblock %}
+
+{% block content %}
+<section>
+    <h1>{{ package.name }}</h1>
+    <p>{{ package.description }}</p>
+    
+    <h2>Itinerary</h2>
+    <div>
+        {{ package.itinerary }}
+    </div>
+    
+    <h2>Harga</h2>
+    <p>Rp {{ package.price }}</p>
+    
+    <a href="/paket-saudah/">Kembali ke Daftar Paket</a>
+</section>
+{% endblock %}
