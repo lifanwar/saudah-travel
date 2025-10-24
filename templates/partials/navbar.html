@@ -1,10 +1,19 @@
+{% load static %}
+
 <header class="sticky top-0 z-50 bg-white shadow-sm">
     <nav class="bg-white border-b border-gray-200" x-data="{ mobileMenuOpen: false }">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         
         <!-- Logo -->
         <a href="{% url 'core:beranda' %}" class="flex items-center space-x-3">
-            {% comment %} <img src="{% static 'img/logo-icon.png' %}" class="h-8" alt="Saudah Logo" /> {% endcomment %}
+            <img
+            src="{% static 'img/logo-icon.png' %}"
+            alt="Saudah Travel"
+            class="h-8"
+            onload="this.nextElementSibling.hidden = true"
+            onerror="this.style.display='none'; this.nextElementSibling.hidden = false"
+            decoding="async"
+          />
             <span class="self-center text-2xl font-semibold whitespace-nowrap">Saudah Travel</span>
         </a>
         
