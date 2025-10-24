@@ -10,11 +10,10 @@
             src="{% static 'img/logo-icon.png' %}"
             alt="Saudah Travel"
             class="h-8"
-            onload="this.nextElementSibling.hidden = true"
-            onerror="this.style.display='none'; this.nextElementSibling.hidden = false"
             decoding="async"
+            onerror="this.style.display='none'; this.nextElementSibling.hidden = false"
           />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap">Saudah Travel</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap" hidden>Saudah Travel</span>
         </a>
         
         <!-- Mobile menu button -->
@@ -56,6 +55,8 @@
                 <div x-show="open"
                      @mouseenter="open = true" 
                      @mouseleave="open = false"
+                     x-cloak 
+                     hidden
                      x-transition
                      class="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 top-full mt-2">
                   <ul class="py-2 text-sm text-gray-700">
